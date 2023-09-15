@@ -32,3 +32,33 @@ footer{
     color: white;
     width: 100%;
 }
+<table>
+          <tr>
+            <td class="head">Wartość współczynnika</td>
+            <td class="head">Kategoria BMI</td>
+          </tr>
+          <tr>
+            <td><18,5</td>
+            <td>Niedowaga</td>
+          </tr>
+          <tr>
+            <td>18,5 - 24,9</td>
+            <td>Norma</td>
+          </tr>
+          <tr>
+            <td>25,0 - 29,9</td>
+            <td>Nadwaga</td>
+          </tr>
+          <tr>
+            <td>30,0 - 34,9</td>
+            <td>Otyłość 1st.</td>
+          </tr>
+          <tr>
+            <td>35,0 - 39,9</td>
+            <td>Otyłość 2st.</td>
+          </tr>
+          <tr>
+            <td>>39,9</td>
+            <td>Otyłość 3st.</td>
+          </tr>
+        </table>
