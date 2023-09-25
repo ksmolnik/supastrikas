@@ -1,0 +1,58 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: rgb(197, 85, 160);
+    width: 50%;
+    height: 180px;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+}
+
+
+section {
+    background-color: rgb(246, 226, 222);
+    text-align: center;
+    padding: 10px;
+    height: 100px;
+    overflow: auto;
+}
+
+main {
+    background-color: rgb(197, 85, 160);
+    color: white;
+    width: 50%;
+    height: 400px;
+    float: left;
+
+}
+
+div {
+    background-color: rgb(197, 85, 160);
+    color: white;
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 200%;
+    letter-spacing: 10px;
+}
+
+table,
+td {
+    border: 2px solid blue;
+    margin: 20px;
+    padding: 10px;
+
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(246, 226, 222);
+    padding: 10px;
+    height: 100px;
+}

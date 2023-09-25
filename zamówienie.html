@@ -3,19 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>fabryka zelkow</title>
+    <title>zamówienie</title>
     <link rel="stylesheet" href="styl9.css">
 </head>
 
 <body>
     <header>
-        <a href="zamówienie.html"><img src="zelek2.png" alt=""></a>
+        <img src="zelek2.png" alt="">
     </header>
     <header>
         <img src="cukierki1.jpg" alt="">
     </header>
     <section>
-        <h2> Nasza Oferta</h2>
+        <h2> Zamów nasz produkt</h2>
     </section>
     <main>
         <h1>Oferta</h1>
@@ -44,11 +44,39 @@
         </table>
     </main>
     <div>
-        <img src="cukierki3.jpg" alt="Nasze wyroby">
+        Podaj numer kształtu:
+        <br>
+        <label for="ksztalt">
+            <input type="number">
+        </label>
+        <br>
+        skomponuj swoj kolor, podaj RGB:
+        <br>
+        <label for="kolor">
+            R:<input type="number"> G: <input type="number"> B: <input type="number">
+        </label>
+        <br>
+        <input type="submit" value="Zamów">
+        <p>Wybrany kształt</p>
+        <input type="submit" value="Wybrany Kolor">
     </div>
     <footer>
         <p>Krzysztof Smolnik: <i>1212341010</i> </p>
     </footer>
+    <script>
+        const ksztaltzelka = document.querySelector('#ksztalt')
+        const R = document.querySelector
+        const G = document.querySelector
+        const B = document.querySelector
+        const subBtn = document.querySelector
+        const colorBtn = document.querySelector
+        const wybrKsztalt = document.querySelector
+
+        subBtn.addEventListener('click', function () {
+            const ksztaltVal = ksztaltzelka.value;
+
+        }
+    </script>
 </body>
 
 </html>
