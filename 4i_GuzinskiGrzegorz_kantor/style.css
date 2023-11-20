@@ -1,0 +1,42 @@
+body{
+    background-color:#333333 ;
+    font-family: sans-serif;
+}
+div{
+    border: 1px solid white;
+    margin-right: 15%;
+    margin-left: 15%;
+    border-radius: 15px;
+    color: white;
+      
+}
+header{
+    color: white;
+    text-align: center;
+    
+}
+main{
+    color: white;
+    
+    text-align: center;
+    
+}
+img{
+    height: 250px;
+    width: 450px;
+}
+main > h3{
+    color: green;
+}
+aside{
+  text-align: center;  
+}
+fieldset{
+    border-radius: 15px;
+}
+footer{
+    color: white;
+    text-align: center;
+   
+    
+}
