@@ -1,0 +1,26 @@
+const ilemonet = document.querySelector('#ilemonet');
+const cenamonety = document.querySelector('#cenamonety');
+const wartoscmonet = document.querySelector('#wartoscmonet');
+const ilebanknotow = document.querySelector('#ilebanknotow');
+const cenabanknotu = document.querySelector('#cenabanknotu');
+const wartoscbanknotow = document.querySelector('#wartoscbanknotow');
+const bnt = document.querySelector('#bnt');
+const lacznawartosc = document.querySelector('#lacznawartosc');
+
+bnt.addEventListener('click',function (evt) {
+    evt.preventDefault();
+    const ilemonetValue = ilemonet.value;
+    const cenamonetyValue = cenamonety.value;
+    const ilebanknotowValue = ilebanknotow.value;
+    const cenabanknotuValue = cenabanknotu.value;
+
+    const monety = ilemonetValue * cenamonetyValue;
+    const banknoty = ilebanknotowValue * cenabanknotuValue;
+
+    const razem = (monety + banknoty)
+
+    wartoscmonet.innerHTML = (monety.toFixed(2));
+    wartoscbanknotow.innerHTML = (banknoty.toFixed(2));
+    lacznawartosc.innerHTML = (razem.toFixed(2));
+   
+})
