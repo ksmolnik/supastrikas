@@ -1,64 +1,52 @@
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #7D7F85;
+    font-family: garamond;
+    margin-left: 100px;
+    width: 80%;
 }
-main{
-    width: 800px;
-    margin: auto;
-display: flex;
-flex-wrap: wrap;
-}
+
 header{
-    height: 260px;
-    width: 100%;
-}
-aside{
-    background-color: #1a3b98;
+    background-color: indigo;
+    color: white;
+    font-size: 140%;
+    height: 150px;
+    width: 75%;
     text-align: center;
-    height: 600px ;
-    width: 20%;
+    float: right;
+    
+    
 }
 section{
-    background-color: #c2c3c2;
+    width:25%;
+    height: 500px;
+    background-color: lavender;
+    float: left;
+}
+aside{
+    height: 300px;
+    width: 25%;
+    background-color: lavender;
+    float: left;
+    
+}
+
+#pic{
+    padding: 5px;
+    margin: 10px;
+}
+
+main{
+    height: 650px;
+    width: 75%;
+    background-color: lavender;
+    font-size: 200%;
     text-align: center;
-    color: #886829;
-    height: 560px;
-    width: 80%;
-    padding-top: 40px;
+    float: right;
 }
 footer{
-    background-color: #1a3b98;
-    text-align: center;
+    background-color: indigo;
     color: white;
-    width: 100%;
+    text-align: right;
 }
-<table>
-          <tr>
-            <td class="head">Wartość współczynnika</td>
-            <td class="head">Kategoria BMI</td>
-          </tr>
-          <tr>
-            <td><18,5</td>
-            <td>Niedowaga</td>
-          </tr>
-          <tr>
-            <td>18,5 - 24,9</td>
-            <td>Norma</td>
-          </tr>
-          <tr>
-            <td>25,0 - 29,9</td>
-            <td>Nadwaga</td>
-          </tr>
-          <tr>
-            <td>30,0 - 34,9</td>
-            <td>Otyłość 1st.</td>
-          </tr>
-          <tr>
-            <td>35,0 - 39,9</td>
-            <td>Otyłość 2st.</td>
-          </tr>
-          <tr>
-            <td>>39,9</td>
-            <td>Otyłość 3st.</td>
-          </tr>
-        </table>
+
+
+
