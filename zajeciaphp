@@ -1,0 +1,80 @@
+<?php
+/*function pierwsza($a){
+for ($i=2; $i <$a ; $i++) { 
+    if ($a%$i == 0 ) {
+        echo "Liczba nie jest liczbą pierwszą";
+        break;
+    } else {
+        echo "Liczba jest liczbą pierwszą";
+        break;
+    }
+    
+}
+}
+
+pierwsza(7)*/
+
+
+/*$tablica["imie"] = "Jan";
+$tablica["nazwisko"] = "Kowalski";
+$tablica["adres"] = "Polna 1";
+
+echo $tablica["imie"]." ".$tablica["nazwisko"].", ul. ".$tablica["adres"]."n";*/
+
+/*$tab =array("Dzień 1"=>"Poniedziałek",
+            "Dzień 2"=>"Wtorek",
+            "Dzień 3"=>"Środa",
+            "Dzień 4"=>"Czwartek",
+            "Dzień 5"=>"Piątek",
+            "Dzień 6"=>"Sobota",
+            "Dzień 7"=>"Niedziela");
+foreach($tab as $item => $description)
+{
+    echo $item,":", $description,"<br>";
+}*/
+
+
+/*$tab=array(3,9,1,2,4,8,7,5,3,1);
+echo "Tablica przed dodawaniem: ";
+foreach($tab as $item)
+{
+    echo $item.", ";
+}
+echo"<br> Tablica po dodawaniu: ";
+foreach($tab as $item)
+{
+    echo $item+2 .", ";
+}
+
+$data = getdate();
+
+$dzien=$data["mday"];
+$miesiac=$data["mon"];
+$rok=$data["year"];
+$godzina=$data["hours"];
+$minuta=$data["minutes"];
+$sekunda=$data["seconds"];
+if($dzien<10) $dzien="0".$dzien;
+if($miesiac<10) $dzien="0".$miesiac;
+if($godzina<10) $godzina="0".$godzina;
+if($minuta<10) $minuta="0".$minuta;
+if($sekunda<10) $sekunda="0".$sekunda;
+echo "Bieżąca data to: $dzien-$miesiac-$rok r.  <br>";
+echo "Aktualna godzina to: $godzina:$minuta:$sekunda";
+*/
+$data = getdate();
+$dzien=$data["mday"];
+$miesiac=$data["mon"];
+$rok=$data["year"];
+$godzina=$data["hours"];
+$minuta=$data["minutes"];
+$sekunda=$data["seconds"];
+$dzienroku=$data["yday"];
+$dzientyg=$data["weekday"];
+$miesiacn=$data["month"];
+
+echo"Dzisiaj jest $dzientyg  <br>";
+echo"$dzien  $miesiacn  $rok r. <br>";
+echo"Jest to $dzienroku dzień roku"
+
+?>
