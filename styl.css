@@ -1,52 +1,55 @@
-body{
-    font-family: garamond;
-    margin-left: 100px;
-    width: 80%;
-}
-
-header{
-    background-color: indigo;
-    color: white;
-    font-size: 140%;
-    height: 150px;
-    width: 75%;
-    text-align: center;
-    float: right;
-    
-    
-}
-section{
-    width:25%;
-    height: 500px;
-    background-color: lavender;
-    float: left;
-}
-aside{
-    height: 300px;
-    width: 25%;
-    background-color: lavender;
-    float: left;
-    
-}
-
-#pic{
-    padding: 5px;
-    margin: 10px;
+body {
+    background-color: ;
+    background-color: #7D7F85;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main{
-    height: 650px;
-    width: 75%;
-    background-color: lavender;
-    font-size: 200%;
+   width: 800px;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+header{
+    height: 200px;
+    width: 100%;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    background-color: #F8C013;
     text-align: center;
-    float: right;
+    width: 30%;
+    height: 600px;
+    float: left;
 }
+
+section{
+    display: flex;
+    flex-direction: column;
+    background-color: #C2C3C2;
+    color:  #886829;
+    text-align: center;
+    height: 560px;
+    width: 70%;
+    padding-top: 40px;
+    float right;
+}
+
 footer{
-    background-color: indigo;
-    color: white;
-    text-align: right;
+    background-color: #1A3B98;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex direction: row;
+    justify-content: center;
 }
 
-
+#auto {
+    width: 75%;
+    margin: auto;
+}
 
