@@ -1,0 +1,57 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    background-color: #808;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: larger;
+    background: color #322;;
+    color: #898;
+    
+}
+
+main{
+    background-color: #808;
+    padding: 50px;
+}
+
+
+.all {
+    display: flex;
+    flex-wrap: wrap;  
+    padding: 20px;                            
+    margin: auto;                 
+    justify-content: center;        
+    gap: 10px;
+
+}
+
+.seat {
+    display: flex;
+    border-radius: 2px;
+    justify-content: center;        
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+    color: #f7f7;
+    flex: 0 0 calc(100% / 6 - 10px);
+    
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+#summ{
+    background-color: #000;
+    color: #fff ;
+    border: 1px solid #808;
+    max-width: 150px;
+}
+
+footer{
+    background-color: #808;
+}
