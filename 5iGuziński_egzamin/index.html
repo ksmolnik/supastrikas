@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Konfigurator wyposażenia</title>
+</head>
+<body>
+    <main>
+    <header>
+    <img src="baner.jpg" alt="baner" >
+    </header>
+    <aside>
+        <form action="" id="form">
+            <hr>
+            <h2>Kolor</h2>
+            <select name="kolor" id="kolor">
+                <option id="szary" >szary</option>
+                <option id="niebieski">niebieski</option>
+                <option id="czerwony">czerwony</option>
+                <option id="żółty">żółty</option>
+                <option id="zielny">zielony</option>
+            </select>
+            <hr>
+            <h2>Felgi</h2>
+            <label>
+               <p>Stalowe<input type="radio" checked id="stalowe"  name="felgi"/></p> 
+               <p>Aluminiowe<input type="radio" id="aluminiowe"  name="felgi"/></p> 
+            </label>
+            <hr>
+            <h2>Doposażenie</h2>
+            <label>
+                <p>Czujnik parkowania <input type="checkbox" id="czujnik"/></p>
+               <p>Climatronic <input type="checkbox" id="climatronic"/></p> 
+                <p>Nawigacja <input type="checkbox" id="nawigacja"/></p>
+            </label>
+            <hr>
+        </form>
+    </aside>
+    <section>
+        <h1>Twój samochód</h1>
+        <img src="szary.png" alt="foto" id="auto">
+        
+        <h1>wycena</h1>
+        <p id="cena">Cena bazowa 75000zł</p>
+    </section>
+    <footer>
+        <p>Autor strony: <i>123456789012</i></p>
+    </footer>
+</main>
+<script>
+    const kolorSelect = document.getElementById('kolor');
+    const autoImage = document.getElementById('auto');
+    
+    
+
+    kolorSelect.addEventListener('change', function() {
+        const selectedColor = kolorSelect.value;
+        autoImage.src = `${selectedColor}.png`; 
+    });
+</script>
+</body>
+</html>
