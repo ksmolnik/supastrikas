@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Konfigurator wyposażenia</title>
+</head>
+<body>
+    <header>
+    <img src="baner.png" alt="baner" >
+    </header>
+    <aside>
+        <form action="">
+            <h2>Kolor</h2>
+            <select name="kolor" id="kolor">
+                <option id="szary" >szary</option>
+                <option id="niebieski">niebieski</option>
+                <option id="czerwony">czerwony</option>
+                <option id="zolty">żółty</option>
+                <option id="zielny">zielony</option>
+            </select>
+            <h2>Felgi</h2>
+            <label>
+                Stalowe<input type="radio" checked id="stalowe"  name="felgi"/>
+                Aluminiowe<input type="radio" id="aluminiowe"  name="felgi"/>
+            </label>
+            <h2>Doposażenie</h2>
+            <label>
+                Czujnik parkowania <input type="checkbox" id="czujnik"/>
+                Climatronic <input type="checkbox" id="climatronic"/>
+                Nawigacja <input type="checkbox" id="nawigacja"/>
+            </label>
+        </form>
+    </aside>
+    <main>
+        <h1>Twój samochód</h1>
+        <img src="szary.png" alt="foto">
+        <h1>wycena</h1>
+        <p>Cena bazowa 75000zł</p>
+    </main>
+    <footer>
+        <p>Autor strony: <i>123456789012</i></p>
+    </footer>
+</body>
+</html>
