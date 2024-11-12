@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Lis 12, 2024 at 11:55 AM
+-- Generation Time: Lis 12, 2024 at 12:11 PM
 -- Wersja serwera: 10.4.28-MariaDB
 -- Wersja PHP: 8.2.4
 
@@ -97,7 +97,8 @@ CREATE TABLE `wizyty` (
 -- Indeksy dla tabeli `lekarze`
 --
 ALTER TABLE `lekarze`
-  ADD PRIMARY KEY (`id_lekarza`);
+  ADD PRIMARY KEY (`id_lekarza`),
+  ADD KEY `fk_specjalizacja` (`specjalizacja`);
 
 --
 -- Indeksy dla tabeli `pacjenci`
@@ -122,7 +123,10 @@ ALTER TABLE `specjalizacje`
 -- Indeksy dla tabeli `wizyty`
 --
 ALTER TABLE `wizyty`
-  ADD PRIMARY KEY (`id_wizyty`);
+  ADD PRIMARY KEY (`id_wizyty`),
+  ADD KEY `fk_recepta` (`id_recepty`),
+  ADD KEY `fk_lekarz` (`id_lekarza`),
+  ADD KEY `fk_pacjent` (`id_pacjenta`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -157,6 +161,24 @@ ALTER TABLE `specjalizacje`
 --
 ALTER TABLE `wizyty`
   MODIFY `id_wizyty` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `lekarze`
+--
+ALTER TABLE `lekarze`
+  ADD CONSTRAINT `fk_specjalizacja` FOREIGN KEY (`specjalizacja`) REFERENCES `specjalizacje` (`id_specjalizacji`);
+
+--
+-- Constraints for table `wizyty`
+--
+ALTER TABLE `wizyty`
+  ADD CONSTRAINT `fk_lekarz` FOREIGN KEY (`id_lekarza`) REFERENCES `lekarze` (`id_lekarza`),
+  ADD CONSTRAINT `fk_pacjent` FOREIGN KEY (`id_pacjenta`) REFERENCES `pacjenci` (`id_pacjenta`),
+  ADD CONSTRAINT `fk_recepta` FOREIGN KEY (`id_recepty`) REFERENCES `recepta` (`id_recepty`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
