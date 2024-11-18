@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Zegarek</h1>
+    </header>
+    <div id="aa"></div>
+
+    <script>
+
+        function zegar() {
+            let czas = new Date()
+            let data = 
+            czas.getDate() + "." + (czas.getMonth()+1) + "." + czas.getFullYear()
+            let godzina = czas.getHours()
+            let sekund = czas.getSeconds() < 10 ? "0" + czas.getSeconds() : czas.getSeconds();
+            let minut = czas.getMinutes() < 10 ? "0" + czas.getMinutes() : czas.getMinutes();
+            let tekst = data + " | " + " " + godzina + ":" + minut + ":" + sekund;
+
+            document.getElementById("aa").innerHTML = tekst;
+
+            setTimeout("zegar()", 1000)
+        }
+
+        zegar();
+
+    </script>
+    
+</body>
+</html>
